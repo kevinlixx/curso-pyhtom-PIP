@@ -12,10 +12,8 @@ def read_root():
 def get_list():
     return """
     <h1> Hola mundo </h1>
-    <p> Este es un parrafo </p>
-    
-""" 
-
+    <p> Este es un parrafo </p>   
+    """ 
 
 
 def run():
