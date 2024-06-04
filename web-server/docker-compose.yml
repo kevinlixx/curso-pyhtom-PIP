@@ -1,0 +1,9 @@
+services:
+  web-server: #es el nombre del servicio
+    build: #es la ruta donde se encuentra el Dockerfile
+      context: .
+      dockerfile: Dockerfile
+    volumes: #es la ruta donde se encuentra el proyecto
+      - .:/app #permite que los cambios en el proyecto se reflejen en el contenedor
+    ports:
+      - "80:80" #es el puerto donde se ejecutará la aplicación
